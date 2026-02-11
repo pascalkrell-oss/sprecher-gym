@@ -1,0 +1,9 @@
+#sprecher-gym-app {
+  color: #f1f5f9;
+}
+
+#sprecher-gym-app *,
+#sprecher-gym-app *::before,
+#sprecher-gym-app *::after {
+  box-sizing: border-box;
+}
