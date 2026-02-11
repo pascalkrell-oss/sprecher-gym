@@ -7,8 +7,8 @@
   --sg-border: #e5e7eb;
   --sg-text: #333333;
   --sg-text-muted: #6b7280;
-  --sg-accent: #e6b800;
-  --sg-accent-hover: #d4a900;
+  --sg-accent: #1a93ee;
+  --sg-accent-hover: #157fcd;
   --sg-success: #1f9d6d;
   --sg-radius: 15px;
   --sg-ease: 0.25s ease;
@@ -98,8 +98,8 @@
 
 .sprecher-gym-wrapper .tab-btn.bg-indigo-500\/20,
 .sprecher-gym-wrapper .tab-btn.border-indigo-500\/50 {
-  background: #fff8dc !important;
-  border-color: #f4de7d !important;
+  background: rgba(26, 147, 238, 0.1) !important;
+  border-color: rgba(26, 147, 238, 0.22) !important;
   font-weight: 700;
 }
 
@@ -128,17 +128,17 @@
   padding-inline: 1rem;
   font-weight: 600;
   border: 1px solid transparent;
-  transition: background-color var(--sg-ease), box-shadow var(--sg-ease), transform var(--sg-ease);
+  transition: background-color var(--sg-ease), box-shadow var(--sg-ease), border-color var(--sg-ease), opacity var(--sg-ease);
 }
 
 .sprecher-gym-wrapper button:hover,
 .sprecher-gym-wrapper button:focus-visible {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(230, 184, 0, 0.22);
+  transform: none !important;
+  box-shadow: 0 0 0 3px rgba(26, 147, 238, 0.18);
 }
 
 .sprecher-gym-wrapper button:active {
-  transform: translateY(0);
+  transform: none !important;
 }
 
 .sprecher-gym-wrapper #generateTextBtn,
@@ -184,7 +184,7 @@
 .sprecher-gym-wrapper select:focus,
 .sprecher-gym-wrapper textarea:focus,
 .sprecher-gym-wrapper button:focus-visible {
-  outline: 2px solid rgba(230, 184, 0, 0.45);
+  outline: 2px solid rgba(26, 147, 238, 0.45);
   outline-offset: 2px;
 }
 
@@ -213,8 +213,8 @@
 }
 
 .sprecher-gym-wrapper #planToggle.bg-indigo-500 {
-  background: #f7e9a6 !important;
-  border-color: #ebcf58 !important;
+  background: rgba(26, 147, 238, 0.12) !important;
+  border-color: rgba(26, 147, 238, 0.22) !important;
 }
 
 .sprecher-gym-wrapper #planToggle.bg-emerald-500 {
@@ -228,6 +228,10 @@
 
 .sprecher-gym-wrapper .premium-lockable.opacity-60 {
   opacity: 0.52 !important;
+}
+
+.sprecher-gym-wrapper *:hover {
+  transform: none !important;
 }
 
 @media (max-width: 1024px) {
