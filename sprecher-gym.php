@@ -50,7 +50,7 @@ function sprecher_gym_shortcode(): string
 {
     ob_start();
     ?>
-    <div id="sprecher-gym-app">
+    <div id="sprecher-gym-app" class="sprecher-gym-wrapper">
       <div class="min-h-screen lg:grid lg:grid-cols-[260px_1fr]">
       <aside class="border-b lg:border-b-0 lg:border-r border-slate-800 bg-cabin-800/70 backdrop-blur">
         <div class="p-6">
